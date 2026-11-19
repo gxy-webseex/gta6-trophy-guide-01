@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · 55 trophies to the platinum</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d1320'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23f5c542'%3E★%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+<header class="masthead">
+  <div>
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">Every one of the 55 trophies — official names, descriptions and grades, a guide in our own words with its sources, a roadmap to the platinum, and a checklist that saves in your browser.</p>
+  </div>
+  <div class="progress" aria-label="Progress to platinum">
+    <p class="progress-line"><strong id="progress-count">0 of 55 earned</strong> · <span id="progress-pct">0% to platinum</span></p>
+    <div class="bar"><div id="progress-fill" class="fill" style="width:0%"></div></div>
+    <p class="grades-line" id="grades-line"></p>
+  </div>
+</header>
+
+<section class="controls" aria-label="Filters and settings">
+  <input id="search" type="search" placeholder="Search a trophy, mission or place…" aria-label="Search trophies">
+  <label>Grade
+    <select id="grade">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label>Kind
+    <select id="kind">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="mission">Mission</option>
+      <option value="collectible">Collectible</option>
+      <option value="activity">Activity</option>
+      <option value="platinum">Platinum</option>
+      <option value="online">Online</option>
+    </select>
+  </label>
+  <label>Show
+    <select id="earned-filter">
+      <option value="all">All trophies</option>
+      <option value="earned">Earned only</option>
+      <option value="remaining">Remaining only</option>
+    </select>
+  </label>
+  <label class="check"><input id="missable-only" type="checkbox"> Missable only</label>
+  <label class="check"><input id="spoiler" type="checkbox" checked> Hide story spoilers</label>
+</section>
+
+<section class="actions" aria-label="Save and share progress">
+  <button id="export" type="button">Export progress (.json)</button>
+  <label class="import-btn">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+  <button id="reset" type="button">Reset checklist</button>
+  <p class="save-note">Progress is saved in this browser (localStorage) and never leaves it. Export downloads a file you can import back on any device.</p>
+</section>
+
+<main>
+  <h2 id="list-heading">Checklist — <span id="shown-count"></span></h2>
+  <p class="list-note">Tick a trophy off when you earn it. Click any trophy to open its guide and sources. Hidden story trophies stay hidden until earned while the spoiler setting is on. ⚠ 4 trophies can be missed — do Positive Mental Attitude in Chapter 1, the two partner trophies when your partner is with you, and the choice trophy when it appears. Full details in the missable guide below.</p>
+  <div id="trophy-list" class="trophy-list"></div>
+  <p id="empty-note" class="empty-note" hidden>No trophies match these filters.</p>
+</main>
+
+<aside class="missable-callout" id="missable-callout" aria-label="Missable trophies">
+  <h2>⚠ Watch these 4 — they can be missed</h2>
+  <p>There is no mission replay in GTA VI, and the published guides flag only one trophy as potentially missable. This guide also flags the two partner trophies and the choice trophy, because they need your partner present or a story choice. Do them when the moment appears; everything else can be finished in free roam after the story.</p>
+  <ul id="missable-list"></ul>
+</aside>
+
+<section class="roadmap" id="roadmap" aria-label="Roadmap to the platinum">
+  <h2>Roadmap to the platinum — about 200 hours, difficulty 4/10</h2>
+  <p class="roadmap-intro">One playthrough is enough. Play the story first and grab the one-time moments as they appear, then the strangers, then the big counts in free roam, and finish with the 100% checklist. Cheats disable trophies and saving — keep them off for the whole run.</p>
+  <ol id="roadmap-stages" class="stages"></ol>
+</section>
+
+<footer>
+  <p>Names, descriptions and grades are the official PlayStation list as published by Exophase and PSNProfiles. Guides are written for this entry in our own words; each one names its sources. Sources: <a href="https://www.exophase.com/game/grand-theft-auto-vi-psn/trophies/">Exophase — Grand Theft Auto VI trophies</a> · <a href="https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/">PowerPyx — GTA 6 Trophy Guide &amp; Roadmap</a>. This guide works fully offline and loads nothing from the network.</p>
+</footer>
+
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
